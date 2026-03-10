@@ -21,11 +21,16 @@
         geralmente o código de JS fica no final do código para que ele carregue primeiro o HTMl e CSS.
     </p>
     <button onclick="msg ()" >botão</button>
-    
+    <p>
+        
+    </p>
     <script>
         function msg ()
-      {window.prompt('Qual é seu nome?')
+      {var nome = window.prompt('Qual é seu nome?')
+        alert('prazer em te conhecer, ' + nome)
       }
+
+
       // o comando Typeof no Terminal mostra qual o tipo da minha variálvel
     </script>
 </body>

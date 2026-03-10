@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aprendendo Javascripts</title>
+    <style>
+        body {
+        background-color: skyblue;
+        
+        }
+
+    </style>
+</head>
+<body>
+    <h1>aprendendo a fazer comandos em JS</h1>
+    <p>
+        Sempre lembrar q HTMl e CSS <strong>NÂO</strong> são linguagens de progamação, lingusgem de marcação e de estilo em cascata.
+    </p>
+    <p>
+        geralmente o código de JS fica no final do código para que ele carregue primeiro o HTMl e CSS.
+    </p>
+    <button onclick="msg ()" >botão</button>
+    <p>
+        
+    </p>
+    <script>
+        function msg ()
+      { var n1 = Number(window.prompt('Digite um numero: ')) // string
+      var n2 = Number(window.prompt('digite outro numero: ')) // string
+      s = n1 + n2 
+      alert(`a soma de ${n1} e ${n2} é ${s}`) // concatenação
+      //(number + number) para adição
+      // (string + string) para concatenação
+
+      //convertendo Para String
+      //       alert('a soma dos dois numeros que vc me mostrou é ' + s.toString) 
+     //       alert('a soma dos dois numeros que vc me mostrou é ' + String(s))
+      /*
+        Jeitos de conveter para string
+        (Var)toString
+        String(Var)
+
+        Como simplificar ParseInt e parseFlout é só colocar o Number
+      */
+      }
+        /* Formatando Strings
+    var s = 'JavaScript'
+    'Eu estou aprendendo s'  // não faz interpolação
+    'Eu estou aprendendo' + s  // usa concatenação
+    `Eu estou aprendendo ${s)`   // usa template string
+
+    s.length  // quantos caracteres a string tem
+    s.toUpperCase()   // tudo para 'MAIÚSCULAS'
+    s.toLowerCase()  // tudo para 'minúsculas'
+        */
+
+      // o comando Typeof no Terminal mostra qual o tipo da minha variálvel
+    </script>
+</body>
+</html>
