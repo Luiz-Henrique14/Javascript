@@ -12,7 +12,7 @@
 </head>
 <body>
     <h1>
-        Em qual país você é
+        De qual país você é?
     </h1>
     <input type="text" name="txtn" id="txtn">
     <input type="button" value="verificar" onclick="clicou()">
@@ -24,8 +24,9 @@
         var r = document.querySelector('div#res')
         var na = document.querySelector('input#txtn')
         function clicou(){
-            if (na == 'Brasil'){
-            r.innerHTML = `vc é brasileiro, vc é do <strong>${na}</strong>`
+            
+            if (na.value.toLowerCase() == "brasil"){
+            r.innerHTML = `vc é brasileiro, vc é do <strong>${na.value}</strong>`
         } else {
             r.innerHTML = 'vc é estrangeira'
         }
