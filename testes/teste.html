@@ -7,17 +7,23 @@
 </head>
 <body>
     <h1>
-        Teste de Style 
+        Teste de mostrar as variaveis
     </h1>
-    <button onclick="msg ()" ></button>
+    <input type="text" name="nome" id="nome">
+    <input type="email" name="gmail" id="gmail">
 
+    <input type="button" value="mostrar" onclick="mostrar()">
 
-
+    <p id="res"></p>
         <script>
-            var msgn 
-            function msg () {
-                alert(m)
+            var n = document.getElementById('nome')
+            var g = document.getElementById('gmail')
+            var r = document.getElementById('res')
+            function mostrar(){
+                res.innerHTML = ` o seu nome é <strong>${n.value}</strong>, e seu Email <strong>${g.value}</strong>`
+
             }
+
         </script>
 </body>
 </html>
