@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hora do Dia</title>
+    <link rel="stylesheet" href="contando.css">
+</head>
+<body>
+    <header>
+        <h1>Contando os Números</h1>
+    </header>
+    <section>
+        <div id="colocar">
+            <label>Início:</label> 
+           <input type="number" id="ini" placeholder="EX: 1">
+           <br>
+           <label>Fim:</label> 
+           <input type="number" id="fim" placeholder="EX: 20">
+           <br>
+           <label>Passo:</label> 
+           <input type="number" id="pas" placeholder="EX: 2">
+           <br>
+           <input type="button" value="Calcular" onclick="contar()">
+        </div>
+        
+        <div id="res">Esperando os valores..... </div>
+    </section>
+    <footer>
+        <p>
+            &copy; CursoemVideo
+        </p>
+    </footer>
+<script src="contando.js"></script>
+</body>
+</html>
